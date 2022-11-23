@@ -1,0 +1,15 @@
+const arr = [3, 'delhi DeLhi', 'himalaya HimaLwYA', 'chennai CheNnAI'];
+
+function checkValid(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    let word = arr[i];
+    const splitWord = word.split(' ');
+    if (splitWord[0].toLowerCase() === splitWord[1].toLowerCase()) {
+      console.log('same');
+    } else {
+      console.log('not same');
+    }
+  }
+}
+
+checkValid(arr);
